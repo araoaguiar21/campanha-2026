@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Silva 2026 — Renovação para o Estado</title>
+  <title>João Silva 2026 — Renovação para a Cidade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700;900&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet">
@@ -12,10 +12,8 @@
 </head>
 <body>
 
-  <!-- Barra de progresso de scroll -->
   <div id="scroll-progress"></div>
 
-  <!-- Menu de Navegação -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">JS<span>2026</span></a>
@@ -27,9 +25,8 @@
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#galeria">Galeria</a></li>
         <li><a href="#apoio" class="nav-cta">Apoiar</a></li>
-        <!-- Botão Administrativo integrado perfeitamente ao menu -->
         <li>
-          <a href="#" onclick="abrirLoginADM(event)" style="background: #1e3a8a; color: white; padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; border: 1px solid rgba(255,255,255,0.1);">
+          <a href="#" onclick="abrirLoginADM(event)" style="background: #1e3a8a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #3b82f6;">
             <i class="fa-solid fa-lock"></i> Área do Candidato
           </a>
         </li>
@@ -40,7 +37,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -60,7 +56,6 @@
     </div>
   </section>
 
-  <!-- HISTÓRIA / SOBRE -->
   <section id="historia" class="historia reveal">
     <div class="container">
       <div class="historia-grid">
@@ -103,7 +98,6 @@
     </div>
   </section>
 
-  <!-- PROPOSTAS -->
   <section id="propostas" class="propostas reveal">
     <div class="container">
       <span class="section-tag">O que vamos fazer</span>
@@ -192,7 +186,6 @@
     </div>
   </section>
 
-  <!-- NÚMEROS EM DESTAQUE -->
   <section id="numeros" class="numeros reveal">
     <div class="container">
       <div class="numeros-grid">
@@ -216,7 +209,6 @@
     </div>
   </section>
 
-  <!-- DEPOIMENTOS -->
   <section id="depoimentos" class="depoimentos reveal">
     <div class="container">
       <span class="section-tag">O que dizem</span>
@@ -259,7 +251,6 @@
     </div>
   </section>
 
-  <!-- AGENDA -->
   <section id="agenda" class="agenda reveal">
     <div class="container">
       <span class="section-tag">Esteja presente</span>
@@ -306,7 +297,6 @@
     </div>
   </section>
 
-  <!-- GALERIA -->
   <section id="galeria" class="galeria reveal">
     <div class="container">
       <span class="section-tag">Nossa campanha</span>
@@ -340,7 +330,6 @@
     </div>
   </section>
 
-  <!-- APOIO / FORMULÁRIO -->
   <section id="apoio" class="apoio reveal">
     <div class="container">
       <div class="apoio-grid">
@@ -396,11 +385,10 @@
     </div>
   </section>
 
-  <!-- RODAPÉ -->
   <footer>
     <div class="container footer-inner">
       <div class="footer-logo">JS<span>2026</span></div>
-      <p class="footer-slogan">Renovação para o estado. Trabalho para o povo.</p>
+      <p class="footer-slogan">Renovação para a cidade. Trabalho para o povo.</p>
       <div class="redes-sociais">
         <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -408,7 +396,7 @@
         <a href="https://wa.me/5521976107346" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <div class="footer-nav">
-        <a href="#historia">History</a>
+        <a href="#historia">História</a>
         <a href="#propostas">Propostas</a>
         <a href="#agenda">Agenda</a>
         <a href="#galeria">Galeria</a>
@@ -418,23 +406,25 @@
     </div>
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
   <a href="https://wa.me/5521976107346" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- MODAL DE LOGIN DA ÁREA ADMINISTRATIVA (Fechado e isolado de forma correta) -->
-  <div id="modal-login-adm" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 10000; align-items: center; justify-content: center;">
-    <div style="background: white; padding: 30px; border-radius: 16px; width: 100%; max-width: 380px; box-shadow: 0 12px 32px rgba(0,0,0,0.3); position: relative; font-family: sans-serif; color: #1f2937;">
+
+  <div id="modal-login-adm" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.75); z-index: 99999; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
+    <div style="background: white; padding: 35px; border-radius: 16px; width: 90%; max-width: 380px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); position: relative; color: #1f2937; text-align: left;">
+      <button onclick="fecharLoginADM()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #9ca3af;">&times;</button>
       
-      <button onclick="fecharLoginADM()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 18px; cursor: pointer; color: #9ca3af;">&times;</button>
-      
-      <div style="text-align: center; margin-bottom: 20px;">
-        <i class="fa-solid fa-shield-halved" style="font-size: 40px; color: #1e3a8a; margin-bottom: 10px;"></i>
-        <h3 style="color: #1e3a8a; margin: 0; font-family: sans-serif;">Acesso Restrito</h3>
-        <p style="color: #6b7280; font-size: 13px; margin-top: 5px; font-family: sans-serif;">Campanha 2026</p>
+      <div style="text-align: center; margin-bottom: 25px;">
+        <i class="fa-solid fa-shield-halved" style="font-size: 42px; color: #1e3a8a; margin-bottom: 12px;"></i>
+        <h3 style="color: #1e3a8a; margin: 0; font-family: sans-serif; font-size: 22px; font-weight: 700;">Área do Candidato</h3>
+        <p style="color: #6b7280; font-size: 13px; margin-top: 5px; font-family: sans-serif;">Painel Estratégico Master</p>
       </div>
 
       <form onsubmit="validarLoginADM(event)">
-        <div style="margin-bottom: 15px;">
-          <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 6px; font-family: sans-serif;">E-mail COM
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 6px; font-family: sans-serif;">E-mail de Controle</label>
+          <input type="email" id="adm-email" required placeholder="admin@deputado.com.br" style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; color: #1f2937; background: #fff;">
+        </div>
+        <div style="margin-bottom: 24px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #4b5563; margin-bottom: 6px; font-family: sa
