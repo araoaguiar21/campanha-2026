@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #f1f5f9;
+  color: #111827;
+}
+
+/* MENU */
+
+nav {
+  background: #001f54;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HEADER */
+
+header {
+  background: linear-gradient(135deg, #001f54, #2563eb);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+header a {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header a:hover {
+  transform: scale(1.05);
+}
+
+/* BANNER */
+
+.banner {
+  padding: 70px 20px;
+  text-align: center;
+  background: white;
+}
+
+.banner h2 {
+  font-size: 36px;
+}
+
+/* PROPOSTAS */
+
+.propostas {
+  padding: 50px 20px;
+}
+
+.propostas h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* APOIO */
+
+.apoio {
+  background: #e2e8f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.apoio h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #001f54;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}.hero {
+  height: 90vh;
+
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+
+  padding: 50px;
+
+  border-radius: 15px;
+
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.overlay a {
+  display: inline-block;
+
+  background: #25d366;
+
+  color: white;
+
+  padding: 16px 28px;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+  transform: scale(1.05);
+}
+/* AJUSTES DE ALINHAMENTO DAS PROPOSTAS */
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  /* Faz com que fiquem 2 por linha em telas médias e ajustem no celular */
+  flex: 1 1 calc(50% - 20px); 
+  min-width: 280px;
+}
+
+/* ESTILO DO CONTADOR DE APOIADORES */
+.contador {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.contador span {
+  background: #2563eb;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Ajuste do formulário para os inputs ficarem um embaixo do outro centralizados */
+#form-apoio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/* ESTILO DOS NOVOS ÍCONES */
+.icone-proposta {
+  font-size: 40px;      /* Tamanho do ícone */
+  color: #2563eb;       /* Azul da sua identidade visual */
+  margin-bottom: 15px;  /* Espaço entre o ícone e o título */
+  display: block;       /* Garante que ele fique acima do título */
+}
+
+/* Centralizar o texto dentro dos cards para destacar o ícone */
+.card {
+  text-align: center;
+}/* ESTILOS DA AGENDA */
+.agenda {
+  background: #f8fafc;
+  padding: 60px 20px;
+}
+.agenda h2, .galeria h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.container-agenda {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.evento-item {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+.data-evento {
+  background: #001f54;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  margin-right: 20px;
+}
+.data-evento span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.detalhes-evento h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.detalhes-evento p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ESTILOS DA GALERIA */
+.galeria {
+  background: white;
+  padding: 60px 20px;
+}
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.foto-box {
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.foto-box:hover {
+  transform: scale(1.02);
+}
+
+/* ESTILOS DO RODAPÉ */
+footer {
+  background: #001f54;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+.redes-sociais {
+  margin-bottom: 15px;
+}
+.redes-sociais a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.redes-sociais a:hover {
+  color: #2563eb;
+}
+
+/* AJUSTE PARA CELULAR (RESPONSIVIDADE) */
+@media (max-width: 600px) {
+  .evento-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .data-evento {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  nav ul {
+    justify-content: center;
+    font-size: 14px;
+  }
