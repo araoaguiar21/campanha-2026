@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Silva 2026</title>
+  
+  <!-- Biblioteca de ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#propostas">Propostas</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#apoio">Apoiar</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabeçalho Principal -->
+  <header>
+    <h1>JOÃO SILVA</h1>
+    <p>Renovação para a cidade</p>
+    <a href="https://wa.me/5521976107346" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> Fale no WhatsApp
+    </a>
+  </header>
+
+  <!-- Seção Sobre / Banner -->
+  <section id="historia" class="banner">
+    <h2>Juntos por um futuro melhor</h2>
+    <p style="max-width: 800px; margin: 20px auto 0; color: #4b5563; line-height: 1.6;">
+      Nascido e criado na nossa comunidade, João Silva tem dedicado os últimos anos a entender as reais necessidades do povo. Conheça nossa trajetória e junte-se à mudança.
+    </p>
+  </section>
+
+  <!-- Seção de Propostas -->
+  <section id="propostas" class="propostas">
+    <h2>Propostas</h2>
+    
+    <div class="container-cards">
+      <div class="card">
+        <i class="fa-solid fa-heart-pulse icone-proposta"></i>
+        <h3>Saúde</h3>
+        <p>Melhorar o atendimento nos postos e garantir remédios para todos.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-book-open icone-proposta"></i>
+        <h3>Educação</h3>
+        <p>Mais tecnologia nas escolas e valorização dos profissionais.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-shield-halved icone-proposta"></i>
+        <h3>Segurança</h3>
+        <p>Monitoramento inteligente e melhoria da iluminação pública.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-bus icone-proposta"></i>
+        <h3>Transporte</h3>
+        <p>Mais frotas nos horários de pico e integração de tarifas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO AGENDA (Nova) -->
+  <section id="agenda" class="agenda">
+    <h2>Agenda de Eventos</h2>
+    <div class="container-agenda">
+      <div class="evento-item">
+        <div class="data-evento">24<span>Mai</span></div>
+        <div class="detalhes-evento">
+          <h3>Caminhada na Feira Central</h3>
+          <p><i class="fa-solid fa-clock"></i> 09:00h | <i class="fa-solid fa-location-dot"></i> Concentração na Praça da Matriz</p>
+        </div>
+      </div>
+      
+      <div class="evento-item">
+        <div class="data-evento">28<span>Mai</span></div>
+        <div class="detalhes-evento">
+          <h3>Grande Reunião de Propostas</h3>
+          <p><i class="fa-solid fa-clock"></i> 19:30h | <i class="fa-solid fa-location-dot"></i> Associação de Moradores</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO GALERIA (Nova) -->
+  <section id="galeria" class="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="grid-galeria">
+      <!-- Coloquei fundos coloridos temporários simulando fotos da campanha -->
+      <div class="foto-box" style="background: #cbd5e1;"><span>Foto Reunião</span></div>
+      <div class="foto-box" style="background: #94a3b8;"><span>Foto Caminhada</span></div>
+      <div class="foto-box" style="background: #64748b;"><span>Foto Comício</span></div>
+      <div class="foto-box" style="background: #475569;"><span>Foto Entrevista</span></div>
+    </div>
+  </section>
+
+  <!-- Seção de Apoio -->
+  <section id="apoio" class="apoio">
+    <h2>Seja um apoiador</h2>
+    
+    <div class="contador">
+      <span id="numero-apoiadores">+2.340</span> apoiadores já se cadastraram
+    </div>
+
+    <form id="form-apoio" onsubmit="salvarApoiador(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="tel" placeholder="WhatsApp (DDD + Número)" required>
+      <button type="submit">Quero apoiar</button>
+    </form>
+  </section>
+
+  <!-- RODAPÉ E REDES SOCIAIS (Nova) -->
+  <footer>
+    <div class="redes-sociais">
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2026 João Silva. Todos os direitos reservados. Propaganda Eleitoral.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
