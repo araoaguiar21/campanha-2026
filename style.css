@@ -929,42 +929,147 @@ footer {
   50%       { box-shadow: 0 8px 40px rgba(37,211,102,0.7); }
 }
 
-/* ===== MOBILE MENU ===== */
+/* ===================================================
+   RESPONSIVIDADE — TABLET (≤ 900px)
+   =================================================== */
 @media (max-width: 900px) {
+
+  /* — Navbar / Hambúrguer — */
   .hamburger { display: flex; }
 
   .nav-links {
     display: none;
     position: fixed;
-    top: 72px; left: 0; right: 0;
+    top: 72px; left: 0; right: 0; bottom: 0;
     background: var(--azul-escuro);
     flex-direction: column;
-    padding: 24px;
+    padding: 20px 16px;
     gap: 4px;
+    overflow-y: auto;
     border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 999;
   }
 
   .nav-links.open { display: flex; }
-  .nav-links a { font-size: 16px; padding: 12px 16px; width: 100%; }
 
-  .historia-grid, .apoio-grid { grid-template-columns: 1fr; gap: 40px; }
-  .historia-foto img { height: 320px; }
-  .container-cards { grid-template-columns: 1fr; }
-  .numeros-grid { grid-template-columns: repeat(2, 1fr); }
-  .depo-grid { grid-template-columns: 1fr; }
-  .grid-galeria { grid-template-columns: repeat(2, 1fr); }
+  .nav-links li { width: 100%; }
 
-  .evento-item {
-    flex-direction: column;
+  .nav-links a {
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .nav-links .nav-cta {
+    margin-top: 8px;
     text-align: center;
+    padding: 14px 16px;
+  }
+
+  /* — Seções: padding menor — */
+  .historia, .propostas, .depoimentos,
+  .agenda, .galeria, .apoio {
+    padding: 64px 0;
+  }
+
+  .numeros { padding: 56px 0; }
+
+  /* — História — */
+  .historia-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .historia-foto img {
+    height: 300px;
+    object-position: top;
+  }
+
+  .historia-badge {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .historia-texto h2 {
+    font-size: 30px;
+  }
+
+  /* — Propostas — */
+  .container-cards {
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .apoio-stats { justify-content: center; }
+  .card { padding: 24px; }
+
+  /* — Números — */
+  .numeros-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .numero-val { font-size: 44px; }
+  .numero-sufixo { font-size: 32px; }
+
+  /* — Depoimentos — */
+  .depo-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* — Agenda — */
+  .evento-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .data-evento { align-self: flex-start; }
+
+  .btn-evento {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* — Galeria — */
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .foto-box { height: 170px; }
+
+  /* — Apoio — */
+  .apoio-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .apoio-texto h2 { font-size: 38px; }
+
+  .apoio-stats {
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .apoio-stats strong { font-size: 32px; }
+
+  .apoio-form-wrap { padding: 28px; }
 }
 
-@media (max-width: 480px) {
-  .grid-galeria { grid-template-columns: 1fr; }
-  .numeros-grid { grid-template-columns: 1fr 1fr; }
-  .hero-content h1 { letter-spacing: -2px; }
-}
+/* ===================================================
+   RESPONSIVIDADE — MOBILE (≤ 600px)
+   =================================================== */
+@media (max-width: 600px) {
+
+  /* — Container com mais respiro nas laterais — */
+  .container { padding: 0 16px; }
+
+  /* — Seções com padding reduzido — */
+  .historia, .propostas, .depoimentos,
+  .agenda, .galeria, .apoio {
+    pad
