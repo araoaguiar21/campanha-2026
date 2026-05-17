@@ -6,14 +6,16 @@
   <title>João Silva 2026 — Renovação para a Cidade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700;900&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Barra de progresso de scroll -->
   <div id="scroll-progress"></div>
 
+  <!-- Menu de Navegação -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">JS<span>2026</span></a>
@@ -25,11 +27,6 @@
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#galeria">Galeria</a></li>
         <li><a href="#apoio" class="nav-cta">Apoiar</a></li>
-        <li>
-          <a href="#" onclick="abrirLoginADM(event)" style="background: #1e3a8a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #3b82f6;">
-            <i class="fa-solid fa-lock"></i> Área do Candidato
-          </a>
-        </li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -37,6 +34,7 @@
     </div>
   </nav>
 
+  <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -56,7 +54,8 @@
     </div>
   </section>
 
-  <section id="historia" class="historia">
+  <!-- HISTÓRIA / SOBRE -->
+  <section id="historia" class="historia reveal">
     <div class="container">
       <div class="historia-grid">
         <div class="historia-foto">
@@ -70,19 +69,27 @@
           <div class="timeline">
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div><strong>2010</strong> — Presidente da Associação de Bairro Vila Nova</div>
+              <div>
+                <strong>2010</strong> — Presidente da Associação de Bairro Vila Nova
+              </div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div><strong>2015</strong> — Coordenador do Programa Saúde na Escola</div>
+              <div>
+                <strong>2015</strong> — Coordenador do Programa Saúde na Escola
+              </div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div><strong>2020</strong> — Fundador da ONG Cidade Ativa</div>
+              <div>
+                <strong>2020</strong> — Fundador da ONG Cidade Ativa
+              </div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div><strong>2026</strong> — Candidato a Deputado Estadual pelo povo</div>
+              <div>
+                <strong>2026</strong> — Candidato a Deputado Estadual pelo povo
+              </div>
             </div>
           </div>
         </div>
@@ -90,13 +97,17 @@
     </div>
   </section>
 
-  <section id="propostas" class="propostas">
+  <!-- PROPOSTAS -->
+  <section id="propostas" class="propostas reveal">
     <div class="container">
       <span class="section-tag">O que vamos fazer</span>
       <h2 class="section-title">Nossas Propostas</h2>
       <div class="container-cards">
+
         <div class="card">
-          <div class="card-icon" style="background:#fee2e2; color:#dc2626;"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="card-icon" style="background:#fee2e2; color:#dc2626;">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
           <h3>Saúde</h3>
           <p>Ampliar horários de atendimento nos postos, garantir disponibilidade de medicamentos e implantar telemedicina para consultas de urgência.</p>
           <ul class="card-lista">
@@ -105,8 +116,11 @@
             <li><i class="fa-solid fa-check"></i> Médico especialista itinerante</li>
           </ul>
         </div>
+
         <div class="card">
-          <div class="card-icon" style="background:#dbeafe; color:#2563eb;"><i class="fa-solid fa-book-open"></i></div>
+          <div class="card-icon" style="background:#dbeafe; color:#2563eb;">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
           <h3>Educação</h3>
           <p>Modernizar as escolas municipais com laboratórios de tecnologia, valorizar os professores e garantir acesso à internet de qualidade.</p>
           <ul class="card-lista">
@@ -115,40 +129,89 @@
             <li><i class="fa-solid fa-check"></i> Reforço escolar no contraturno</li>
           </ul>
         </div>
+
         <div class="card">
-          <div class="card-icon" style="background:#dcfce7; color:#16a34a;"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="card-icon" style="background:#dcfce7; color:#16a34a;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
           <h3>Segurança</h3>
           <p>Implantar sistema de câmeras inteligentes, melhorar a iluminação pública e criar programas de policiamento comunitário.</p>
           <ul class="card-lista">
             <li><i class="fa-solid fa-check"></i> 500 câmeras de monitoramento</li>
-            <li><i class="fa-solid fa-check"></i> LED in 100% das ruas</li>
+            <li><i class="fa-solid fa-check"></i> LED em 100% das ruas</li>
             <li><i class="fa-solid fa-check"></i> Base policial comunitária</li>
           </ul>
         </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#fef9c3; color:#ca8a04;">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <h3>Transporte</h3>
+          <p>Mais frotas nos horários de pico, integração de tarifas entre linhas e criação de ciclovias ligando os bairros ao centro.</p>
+          <ul class="card-lista">
+            <li><i class="fa-solid fa-check"></i> Tarifa integrada bus + metrô</li>
+            <li><i class="fa-solid fa-check"></i> Linhas noturnas ampliadas</li>
+            <li><i class="fa-solid fa-check"></i> 20km de ciclovias novas</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#f3e8ff; color:#9333ea;">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <h3>Meio Ambiente</h3>
+          <p>Plantar árvores nas principais vias, criar parques de bairro e implantar coleta seletiva porta a porta em toda a cidade.</p>
+          <ul class="card-lista">
+            <li><i class="fa-solid fa-check"></i> 10.000 árvores plantadas</li>
+            <li><i class="fa-solid fa-check"></i> 5 novos parques de bairro</li>
+            <li><i class="fa-solid fa-check"></i> Coleta seletiva 100% da cidade</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#ffedd5; color:#ea580c;">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3>Emprego e Renda</h3>
+          <p>Criar incubadoras para pequenos empreendedores, feiras de emprego mensais e programas de qualificação profissional gratuitos.</p>
+          <ul class="card-lista">
+            <li><i class="fa-solid fa-check"></i> Centro de qualificação gratuito</li>
+            <li><i class="fa-solid fa-check"></i> Microcrédito para MEIs</li>
+            <li><i class="fa-solid fa-check"></i> Feiras mensais de emprego</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="numeros" class="numeros">
+  <!-- NÚMEROS EM DESTAQUE -->
+  <section id="numeros" class="numeros reveal">
     <div class="container">
       <div class="numeros-grid">
         <div class="numero-item">
-          <span class="numero-val" data-target="15">15</span><span class="numero-sufixo">+</span>
+          <span class="numero-val" data-target="15">0</span><span class="numero-sufixo">+</span>
           <p>Anos de serviço comunitário</p>
         </div>
         <div class="numero-item">
-          <span class="numero-val" data-target="47">47</span>
+          <span class="numero-val" data-target="47">0</span><span class="numero-sufixo"></span>
           <p>Bairros visitados na campanha</p>
         </div>
         <div class="numero-item">
-          <span class="numero-val" data-target="2340">2340</span><span class="numero-sufixo">+</span>
+          <span class="numero-val" data-target="2340">0</span><span class="numero-sufixo">+</span>
           <p>Apoiadores cadastrados</p>
+        </div>
+        <div class="numero-item">
+          <span class="numero-val" data-target="12">0</span><span class="numero-sufixo"></span>
+          <p>Projetos apresentados à câmara</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="depoimentos" class="depoimentos">
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="depoimentos reveal">
     <div class="container">
       <span class="section-tag">O que dizem</span>
       <h2 class="section-title">Depoimentos</h2>
@@ -158,76 +221,201 @@
           <p>"João sempre esteve presente na nossa comunidade. É a mudança que a cidade precisa!"</p>
           <div class="depo-autor">
             <div class="depo-avatar">MR</div>
-            <div><strong>Maria Rodrigues</strong><span>Professora — Vila Nova</span></div>
+            <div>
+              <strong>Maria Rodrigues</strong>
+              <span>Professora — Vila Nova</span>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-estrelas">★★★★★</div>
+          <p>"Participei de um evento dele e fiquei impressionado com a seriedade das propostas. Tem meu voto!"</p>
+          <div class="depo-autor">
+            <div class="depo-avatar" style="background:#16a34a;">CS</div>
+            <div>
+              <strong>Carlos Santos</strong>
+              <span>Comerciante — Centro</span>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-estrelas">★★★★★</div>
+          <p>"Finalmente um candidato que escuta a gente antes de fazer proposta. João é diferente."</p>
+          <div class="depo-autor">
+            <div class="depo-avatar" style="background:#9333ea;">AL</div>
+            <div>
+              <strong>Ana Lima</strong>
+              <span>Empreendedora — Bairro Sul</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="agenda" class="agenda">
+  <!-- AGENDA -->
+  <section id="agenda" class="agenda reveal">
     <div class="container">
       <span class="section-tag">Esteja presente</span>
       <h2 class="section-title">Agenda de Eventos</h2>
       <div class="container-agenda">
+
         <div class="evento-item">
           <div class="data-evento">24<span>Mai</span></div>
           <div class="detalhes-evento">
             <h3>Caminhada na Feira Central</h3>
-            <p><i class="fa-solid fa-clock"></i> 09:00h &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Praça da Matriz</p>
+            <p><i class="fa-solid fa-clock"></i> 09:00h &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Concentração na Praça da Matriz</p>
           </div>
-          <a href="https://wa.me/5521976107346" target="_blank" class="btn-evento">Confirmar</a>
+          <a href="https://wa.me/5521976107346" target="_blank" class="btn-evento">Confirmar presença</a>
         </div>
+
+        <div class="evento-item">
+          <div class="data-evento">28<span>Mai</span></div>
+          <div class="detalhes-evento">
+            <h3>Grande Reunião de Propostas</h3>
+            <p><i class="fa-solid fa-clock"></i> 19:30h &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Associação de Moradores</p>
+          </div>
+          <a href="https://wa.me/5521976107346" target="_blank" class="btn-evento">Confirmar presença</a>
+        </div>
+
+        <div class="evento-item">
+          <div class="data-evento">03<span>Jun</span></div>
+          <div class="detalhes-evento">
+            <h3>Debate nas Escolas Municipais</h3>
+            <p><i class="fa-solid fa-clock"></i> 14:00h &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Escola Estadual Dom Pedro II</p>
+          </div>
+          <a href="https://wa.me/5521976107346" target="_blank" class="btn-evento">Confirmar presença</a>
+        </div>
+
+        <div class="evento-item">
+          <div class="data-evento">10<span>Jun</span></div>
+          <div class="detalhes-evento">
+            <h3>Comício de Lançamento Oficial</h3>
+            <p><i class="fa-solid fa-clock"></i> 18:00h &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Praça Central — Palco Principal</p>
+          </div>
+          <a href="https://wa.me/5521976107346" target="_blank" class="btn-evento">Confirmar presença</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="galeria" class="galeria">
+  <!-- GALERIA -->
+  <section id="galeria" class="galeria reveal">
     <div class="container">
-      <span class="section-tag">Nuestra campanha</span>
+      <span class="section-tag">Nossa campanha</span>
       <h2 class="section-title">Galeria de Fotos</h2>
       <div class="grid-galeria">
         <div class="foto-box">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Reunião">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Reunião com moradores">
+          <div class="foto-overlay"><span>Reunião com Moradores</span></div>
+        </div>
+        <div class="foto-box">
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&q=80" alt="Caminhada">
+          <div class="foto-overlay"><span>Caminhada pelo Bairro</span></div>
+        </div>
+        <div class="foto-box">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80" alt="Comício">
+          <div class="foto-overlay"><span>Comício da Vitória</span></div>
+        </div>
+        <div class="foto-box">
+          <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80" alt="Entrevista">
+          <div class="foto-overlay"><span>Entrevista à Imprensa</span></div>
+        </div>
+        <div class="foto-box">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80" alt="Voluntários">
+          <div class="foto-overlay"><span>Equipe de Voluntários</span></div>
+        </div>
+        <div class="foto-box">
+          <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?w=600&q=80" alt="Visita escola">
+          <div class="foto-overlay"><span>Visita às Escolas</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="apoio" class="apoio">
+  <!-- APOIO / FORMULÁRIO -->
+  <section id="apoio" class="apoio reveal">
     <div class="container">
       <div class="apoio-grid">
         <div class="apoio-texto">
-          <h2>Seja um apoiador!</h2>
+          <span class="section-tag" style="color:#93c5fd;">Faça parte</span>
+          <h2>Seja um<br>apoiador!</h2>
+          <p>Juntos somos mais fortes. Cadastre-se e receba novidades da campanha, convites para eventos e muito mais.</p>
+          <div class="apoio-stats">
+            <div>
+              <strong id="numero-apoiadores">2.340</strong>
+              <span>apoiadores</span>
+            </div>
+            <div>
+              <strong>47</strong>
+              <span>bairros</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>eventos</span>
+            </div>
+          </div>
         </div>
         <div class="apoio-form-wrap">
           <form id="form-apoio" onsubmit="salvarApoiador(event)">
-            <h3>Quero apoiar!</h3>
-            <input type="text" placeholder="Nome" required style="width:100%; padding:10px; margin-bottom:10px;">
-            <button type="submit" class="btn-submit">Confirmar</button>
+            <h3>Quero apoiar João Silva!</h3>
+            <div class="form-group">
+              <label for="nome"><i class="fa-solid fa-user"></i> Nome completo</label>
+              <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone"><i class="fa-brands fa-whatsapp"></i> WhatsApp</label>
+              <input type="tel" id="telefone" placeholder="(DD) 99999-9999" required>
+            </div>
+            <div class="form-group">
+              <label for="bairro"><i class="fa-solid fa-location-dot"></i> Bairro</label>
+              <input type="text" id="bairro" placeholder="Seu bairro">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="voluntario">
+              <label for="voluntario">Quero ser voluntário da campanha</label>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fa-solid fa-heart"></i> Confirmar Apoio
+            </button>
           </form>
+          <div id="success-msg" class="success-msg" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Obrigado pelo apoio!</h3>
+            <p>Entraremos em contato em breve.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- RODAPÉ -->
   <footer>
     <div class="container footer-inner">
-      <p>&copy; 2026 João Silva. Todos os direitos reservados.</p>
+      <div class="footer-logo">JS<span>2026</span></div>
+      <p class="footer-slogan">Renovação para a cidade. Trabalho para o povo.</p>
+      <div class="redes-sociais">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/5521976107346" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="footer-nav">
+        <a href="#historia">História</a>
+        <a href="#propostas">Propostas</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#apoio">Apoiar</a>
+      </div>
+      <p class="footer-legal">&copy; 2026 João Silva. Todos os direitos reservados.<br>Material de propaganda eleitoral. Número do candidato: 11.111</p>
     </div>
   </footer>
 
-  <div id="modal-login-adm" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 99999; align-items: center; justify-content: center;">
-    <div style="background: white; padding: 30px; border-radius: 12px; width: 90%; max-width: 360px; position: relative; color:#333;">
-      <button onclick="fecharLoginADM()" style="position: absolute; top: 10px; right: 10px; background:none; border:none; font-size:20px; cursor:pointer;">&times;</button>
-      <h3 style="text-align:center; margin-bottom:20px;">Painel Administrativo</h3>
-      <form onsubmit="validarLoginADM(event)">
-        <input type="email" id="adm-email" placeholder="E-mail" required style="width:100%; padding:10px; margin-bottom:10px;">
-        <input type="password" id="adm-senha" placeholder="Senha" required style="width:100%; padding:10px; margin-bottom:20px;">
-        <button type="submit" style="width:100%; background:#1e3a8a; color:white; padding:10px; border:none; border-radius:6px; cursor:pointer;">Entrar</button>
-      </form>
-    </div>
-  </div>
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521976107346" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
